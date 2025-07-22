@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@layer base {
+  input {
+    @apply border border-gray-300 outline-none;
+    /* add any Tailwind utility classes you want for all inputs */
+  }
+  button {
+    @apply border border-gray-300;
+  }
+}
