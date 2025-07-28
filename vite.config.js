@@ -5,4 +5,10 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ["@gradio/client"],
+  },
+  ssr: {
+    noExternal: ["@gradio/client"],
+  },
 });

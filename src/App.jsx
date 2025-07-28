@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import { Model } from "./Model";
 
 const API_KEY = "da00e72cf76c106587ce0bc2fc50745b";
 export default function App() {
@@ -62,6 +62,8 @@ export default function App() {
             sunset:<div>{weather.sys.sunset}</div> */}
           </div>
         )}
+
+        <Model />
       </div>
     </>
   );
